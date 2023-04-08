@@ -29,6 +29,7 @@ func (t *taskMock) Hash() servantgo.Hash {
 }
 
 func (t *taskMock) Exec() {
+	time.Sleep(time.Second * 5)
 	t.result = time.Now()
 }
 
